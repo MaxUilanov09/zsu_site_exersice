@@ -1,0 +1,16 @@
+.welcome__section {
+    height: 720px;
+    background-image: url(../../images/welcome_section_background_desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__title {
+        text-align: center;
+        color: $secondary-color;
+        padding-top: 170px;
+
+        &__span {
+            color: $primary-color;
+        }
+    }
+}

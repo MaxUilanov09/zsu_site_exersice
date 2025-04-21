@@ -1,1 +1,12 @@
+@import 'utils/variables';
+@import 'utils/container';
+@import 'utils/mixins';
 @import 'base/reset';
+@import 'components/header';
+@import 'components/modal';
+@import 'components/welcome_section';
+@import 'components/first_section';
+@import 'components/second_section';
+@import 'components/third_section';
+@import 'components/fourth_section';
+@import 'components/footer';

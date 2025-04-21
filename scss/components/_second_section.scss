@@ -1,0 +1,43 @@
+.second__section {
+    background-color: $secondary-background-color;
+
+    &__list {
+        position: relative;
+        margin-top: 34px;
+        margin-left: 138px;
+    }
+
+    &__item:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 365px;
+        height: 251px;
+    }
+
+    &__item:last-child {
+        position: absolute;
+        top: 161px;
+        left: 409px;
+        width: 265px;
+        height: 203px;
+    }
+
+    &__wrap {
+        margin-left: 751px;
+    }
+
+    &__title {
+        margin-top: 41px;
+    }
+
+    &__text {
+        width: 414px;
+        @include h3_styles();
+        margin-bottom: 108px;
+    }
+}
+
+.container__second {
+    display: flex;
+}

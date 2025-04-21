@@ -1,0 +1,36 @@
+.header {
+    height: 70px;
+
+    &__list {
+        width: 1013px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item:nth-child(1) {
+        margin-right: 61px;
+    }
+
+    &__item:nth-child(2) {
+        margin-right: 46px;
+    }
+
+    &__item:nth-child(3) {
+        margin-right: 47px;
+    }
+
+    &__text {
+        @include h3_styles();
+    }
+
+    &__title {
+        @include h2_styles();
+
+        &__blue {
+            color: $primary-color;
+        }
+        &__yellow {
+            color: $secondary-color;
+        }
+    }
+}

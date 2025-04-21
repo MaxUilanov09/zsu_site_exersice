@@ -1,0 +1,40 @@
+.first__section {
+    background-color: $primary-background-color;
+
+    &__title {
+        margin-top: 32px;
+        margin-left: 138px;
+        margin-bottom: 10px
+    }
+
+    &__text {
+        width: 414px;
+        @include h3_styles();
+        margin-left: 138px;
+        margin-bottom: 116px;
+    }
+
+    &__list {
+        position: relative;
+    }
+
+    &__item:first-child {
+        position: absolute;
+        top: 46px;
+        left: 85px;
+        width: 365px;
+        height: 251px;
+    }
+
+    &__item:last-child {
+        position: absolute;
+        top: 195px;
+        left: 485px;
+        width: 265px;
+        height: 203px;
+    }
+}
+
+.container__first {
+    display: flex;
+}

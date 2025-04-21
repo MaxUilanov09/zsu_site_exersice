@@ -1,0 +1,103 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 10;
+}
+
+.is__hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal__window {
+    position: absolute;
+    width: 1005px;
+    height: 598px;
+    left: 50%;
+    top: 50%;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    background-color: $pure-white;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.modal__close__button::before {
+    content: " ";
+    position: absolute;
+    width: 32px;
+    height: 3px;
+    top: 34px;
+    left: 961px;
+    border-radius: 2px;
+    background-color: $pure-black;
+    transform: rotate(45deg);
+}
+
+.modal__close__button::after {
+    content: " ";
+    position: absolute;
+    width: 32px;
+    height: 3px;
+    top: 34px;
+    left: 961px;
+    border-radius: 2px;
+    background-color: $pure-black;
+    transform: rotate(-45deg);
+}
+
+.modal__img {
+    position: absolute;
+    width: 335px;
+    height: 446px;
+    top: 50px;
+    left: 617px;
+    object-fit: cover;
+}
+
+.modal__form {
+    width: 519px;
+    height: 459px;
+    margin: 41px 443px 98px 43px;
+}
+
+.modal__label {
+    position: relative;
+    display: block;
+    width: 519px;
+    height: 57px;
+    margin-bottom: 64px;
+
+    &__text {
+        @include modal_styles();
+        position: absolute;
+        width: 161px;
+        height: 35px;
+        top: -35px;
+        left: 10px;
+        color: $modal-text-color;
+    }
+
+    &__input {
+        width: 519px;
+        height: 57px;
+        border-radius: 15px;
+        background-color: $modal-input-background-color;
+        border: none;
+    }
+}
+
+.modal__form__button {
+    width: 235px;
+    height: 61px;
+    @include h3_styles();
+    color: $pure-white;
+    background-color: $primary-color;
+    border-radius: 15px;
+    border: none;
+}

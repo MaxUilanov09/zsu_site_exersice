@@ -20,7 +20,31 @@ a {
 }
 
 body {
-    font-family: 'Roboto';
-    letter-spacing: 0.03em;
-    list-style: none;
+    background-color: $primary-background-color;
+}
+
+h1, h2, h3, p, a {
+    color: $pure-white;
+}
+
+h1 {
+    @include h1_styles();
+}
+
+h2 {
+    @include h2_styles();
+}
+
+h3 {
+    @include h3_styles();
+}
+
+button {
+    border: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }

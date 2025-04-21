@@ -3,10 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <p>Hello</p>
+    <header class="header">
+        <div class="container header__wrap">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__text">Про збір коштів</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__text">Про нас</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__title">#<span class="header__title__blue">Stand</span>with<span class="header__title__yellow">Ukraine</span></a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__text">Пожертвування</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="backdrop is__hidden" data-modal>
+            <div class="modal__window">
+                <button type="button" class="modal__close__button" button-modal-close-1></button>
+                <img src="./images/" alt="" class="modal__img">
+                <form class="modal__form">
+                    <label class="modal__label">
+                        <p class="modal__label__text">Email</p>
+                        <input type="text" class="modal__label__input">
+                    </label>
+                    <label class="modal__label">
+                        <p class="modal__label__text">Money</p>
+                        <input type="number" class="modal__label__input">
+                    </label>
+                    <label class="modal__label">
+                        <p class="modal__label__text">Card Number</p>
+                        <input type="number" class="modal__label__input">
+                    </label>
+                    <button type="button" class="modal__form__button" button-modal-close-2>Підтримати</button>
+                </form>
+            </div>
+        </div>
+        <section class="welcome__section">
+            <div class="container">
+                <h1 class="welcome__section__title"><span class="welcome__section__title__span">Ой у лузі...</span><br>всім по Бандера смузі</br></h1>
+            </div>
+        </section>
+        <section class="first__section">
+            <div class="container container__first">
+                <div>
+                    <h2 class="first__section__title">Про збір коштів</h2>
+                    <p class="first__section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+                <ul class="first__section__list">
+                    <li class="first__section__item"><img src="./images/first_section_image_1.png" alt="" class="first__section__img"></li>
+                    <li class="first__section__item"><img src="./images/first_section_image_2.png" alt="" class="first__section__img"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="second__section">
+            <div class="container container__second">
+                <ul class="second__section__list">
+                    <li class="second__section__item"><img src="./images/second_section_image_1.png" alt="" class="second__section__img"></li>
+                    <li class="second__section__item"><img src="./images/second_section_image_2.png" alt="" class="second__section__img"></li>
+                </ul>
+                <div class="second__section__wrap">
+                    <h2 class="second__section__title">Про нас</h2>
+                    <p class="second__section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+        </section>
+        <section class="third__section">
+            <div class="container">
+                <h2 class="third__section__title">Якщо ми дуже допоможемо ЗСУ то наша Україно буде така</h2>
+                <ul class="third__section__list">
+                    <li class="third__section__item third__section__item1"><img src="./images/third_section_image_1.png" alt="" class="third__section__img"></li>
+                    <li class="third__section__item third__section__item2"><img src="./images/third_section_image_2.png" alt="" class="third__section__img"></li>
+                    <li class="third__section__item third__section__item3"><img src="./images/third_section_image_3.png" alt="" class="third__section__img"></li>
+                    <li class="third__section__item third__section__item4"><img src="./images/third_section_image_4.png" alt="" class="third__section__img"></li>
+                    <li class="third__section__item third__section__item5"><img src="./images/third_section_image_5.png" alt="" class="third__section__img"></li>
+                    <li class="third__section__item third__section__item6"><img src="./images/third_section_image_6.png" alt="" class="third__section__img"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="fourth__section">
+            <div class="container">
+                <h2 class="fourth__section__title">Проекти пожертвування на ЗСУ</h2>
+                <ul class="fourth__section__list">
+                    <li class="fourth__section__item">
+                        <img src="./images/fourth_section_image_1.png" alt="" class="fourth__section__img">
+                        <h3 class="fourth__section__item__title">Lorem ipsum</h3>
+                        <p class="fourth__section__item__text">Lorem Ipsum is simply</p>
+                        <p class="fourth__section__item__percentage">25%</p>
+                        <button type="button" class="fourth__section__item__button" button-modal-open-1>Підтримати</button>
+                    </li>
+                    <li class="fourth__section__item">
+                        <img src="./images/fourth_section_image_2.png" alt="" class="fourth__section__img">
+                        <h3 class="fourth__section__item__title">Lorem ipsum</h3>
+                        <p class="fourth__section__item__text">Lorem Ipsum is simply</p>
+                        <p class="fourth__section__item__percentage">25%</p>
+                        <button type="button" class="fourth__section__item__button" button-modal-open-2>Підтримати</button>
+                    </li>
+                    <li class="fourth__section__item">
+                        <img src="./images/fourth_section_image_3.png" alt="" class="fourth__section__img">
+                        <h3 class="fourth__section__item__title">Lorem ipsum</h3>
+                        <p class="fourth__section__item__text">Lorem Ipsum is simply</p>
+                        <p class="fourth__section__item__percentage">25%</p>
+                        <button type="button" class="fourth__section__item__button" button-modal-open-3>Підтримати</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer__title">#<span class="footer__title__blue">Stand</span>with<span class="footer__title__yellow">Ukraine</span></h2>
+            <div class="footer__wrap">
+                <ul class="footer__text__list">
+                    <li class="footer__text__item">
+                        <a href="#" class="footer__text__item__link">Політика:</a>
+                    </li>
+                    <li class="footer__text__item">
+                        <a href="#" class="footer__text__item__link">Політика конфіденційності</a>
+                    </li>
+                    <li class="footer__text__item">
+                        <a href="#" class="footer__text__item__link">Дозволи на обробку персональних даних</a>
+                    </li>
+                </ul>
+                <ul class="footer__icon__list">
+                    <li class="footer__icon__item">
+                        <a href="#" class="footer__icon__link">
+                            <svg class="footer__icon__svg">
+                                <use href="./symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__icon__item">
+                        <a href="#" class="footer__icon__link">
+                            <svg class="footer__icon__svg">
+                                <use href="./symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__icon__item">
+                        <a href="#" class="footer__icon__link">
+                            <svg class="footer__icon__svg">
+                                <use href="./symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__copyright__text">Ⓒ 2022 trips</p>
+        </div>
+    </footer>
+    <script src="./modal.js"></script>
 </body>
 </html>
