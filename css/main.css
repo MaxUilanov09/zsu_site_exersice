@@ -1,11 +1,18 @@
 .container {
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* border: 1px solid orange; */
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 * {
   font-family: "Roboto";
 }
@@ -77,14 +84,8 @@ img {
   display: flex;
   align-items: center;
 }
-.header__item:nth-child(1) {
-  margin-right: 61px;
-}
-.header__item:nth-child(2) {
-  margin-right: 46px;
-}
-.header__item:nth-child(3) {
-  margin-right: 47px;
+.header__item__text {
+  display: none;
 }
 .header__text {
   font-family: "Jost";
@@ -107,6 +108,48 @@ img {
   color: #FFC700;
 }
 
+@media (min-width: 1200px) {
+  .header {
+    height: 70px;
+  }
+  .header__list {
+    width: 1013px;
+    display: flex;
+    align-items: center;
+  }
+  .header__item__text {
+    display: list-item;
+  }
+  .header__item:nth-child(1) {
+    margin-right: 61px;
+  }
+  .header__item:nth-child(2) {
+    margin-right: 46px;
+  }
+  .header__item:nth-child(3) {
+    margin-right: 47px;
+  }
+  .header__text {
+    font-family: "Jost";
+    font-size: 24px;
+    line-height: 1.4375;
+    font-weight: 400;
+    letter-spacing: 0em;
+  }
+  .header__title {
+    font-family: "Istok Web";
+    font-size: 48px;
+    line-height: 1.4375;
+    font-weight: 700;
+    letter-spacing: 0em;
+  }
+  .header__title__blue {
+    color: #0075FF;
+  }
+  .header__title__yellow {
+    color: #FFC700;
+  }
+}
 .backdrop {
   position: fixed;
   left: 0;
@@ -218,12 +261,18 @@ img {
 }
 
 .welcome__section {
-  height: 720px;
+  height: 600px;
+  width: 480px;
   background-image: url(../../images/welcome_section_background_desktop.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 .welcome__section__title {
+  font-family: "Istok Web";
+  font-size: 48px;
+  line-height: 1.4375;
+  font-weight: 700;
+  letter-spacing: 0em;
   text-align: center;
   color: #FFC700;
   padding-top: 170px;
@@ -232,6 +281,27 @@ img {
   color: #0075FF;
 }
 
+@media (min-width: 1200px) {
+  .welcome__section {
+    height: 720px;
+    background-image: url(../../images/welcome_section_background_desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .welcome__section__title {
+    font-family: "Jost";
+    font-size: 64px;
+    line-height: 1.4375;
+    font-weight: 900;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFC700;
+    padding-top: 170px;
+  }
+  .welcome__section__title__span {
+    color: #0075FF;
+  }
+}
 .first__section {
   background-color: #010632;
 }
